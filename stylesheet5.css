@@ -1,0 +1,405 @@
+/*page header styling*/
+#img_logo {
+  float: left;
+  margin-left: -550px;
+}
+
+#pageHeader {
+  grid-area: header;
+  height: 350px;
+  background-color: #444;
+  background-color: #e5e3e3;
+  color: #444;
+}
+
+#heading {
+  margin-top: 40mm;
+}
+
+#PageHeader1 {
+  text-align: center;
+  margin-top: 30mm;
+}
+/*end of page header styling*/
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  padding-left: 555px;
+  height: 57px;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #444;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+li a:hover {
+  color: indianred;
+}
+/*end of navbar*/
+
+/*body layout styling*/
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article article article"
+    "article article article"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*end of layout styling*/
+
+/*mainArticle styling*/
+#mainArticle {
+  grid-area: article;
+  height: 300px;
+  margin-top: 100mm;
+  color: #444;
+  }
+  /*end of mainArticle*/
+
+/*span styling*/
+  span.heading3 {
+    border-bottom: 2px solid #ed524d;
+  }
+
+  h3 {
+    border-bottom: 2px solid white;
+    text-align: center;
+    color: #444;
+  }
+  /*end of span styling*/
+  /*sub article styling */
+  #sub_article {
+    text-align: center;
+    width: 1300px;
+    margin-left: 5mm;
+  }
+  /*end of sub styling*/
+
+  /*picture styling */
+  #pic1 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: grey;
+  }
+
+  #pic2 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: lightgrey;
+  }
+
+  #pic3 {
+    float: left;
+    width: 419px;
+    height: 270px;
+    background-color: #444;
+  }
+
+  #pic4 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: darkgrey;
+  }
+
+  #pic5{
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: #333;
+  }
+
+  #pic6 {
+    float: left;
+    width: 419px;
+    height: 270px;
+    background-color: grey;
+  }
+
+  #pic7 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: lightgrey;
+  }
+
+  #pic8 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: indianred;
+  }
+
+  #pic9 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: #444;
+  }
+
+  #pic10 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: lightgrey;
+  }
+
+  #pic11 {
+    float: left;
+    width: 419px;
+    height: 270px;
+    background-color: darkgrey;
+  }
+
+  #pic12 {
+    float: left;
+    width: 310px;
+    height: 270px;
+    background-color: grey;
+  }
+
+  /*end of picture styling */
+
+/*portfolio styling */
+  #Portfolio {
+    background-color: black;
+    height: 810px;
+  }
+  /*end of portflio styling */
+
+.LOGO_icons {
+  margin-top: 70px;
+  height: 270px;
+  background-color: black;
+}
+
+.image_logo {
+  margin-left: 40mm;
+}
+
+#myImg {
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)}
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+    width: 100%;
+}
+}
+
+/*footer section*/
+
+/*flex container*/
+.flex-container {
+display: flex;
+background-color: none;
+margin-top: 0mm;
+}
+
+.flex-container>div {
+background-color: none;
+width: 350px;
+height: 190px;
+margin: 10px;
+text-align: center;
+font-size: 12px;
+}
+
+/*end of flex container*/
+
+/*lists*/
+h2{
+font-size: 25px;
+border-bottom: 2px solid white;
+}
+/*span styling*/
+span.heading {
+border-bottom: 2px solid #ed524d;
+}
+
+/*paragraph styling*/
+.paratext {
+color: black;
+}
+
+/*anchor tag styling*/
+a {
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 11px;
+}
+
+a:hover {
+color: #ed524d;
+}
+/*end of anchor styling*/
+
+.icon {
+float: left;
+margin-left: 25mm;
+}
+
+/*end of lists*/
+
+/*paragraph section*/
+#p2 {
+width: 200px;
+margin-left: 10mm;
+}
+
+#p3 {
+margin-right: 26mm;
+}
+
+#p4 {
+margin-right: 30mm;
+}
+/*end of paragraph section*/
+
+/*flex box*/
+.flex-box {
+display: flex;
+background-color: #ed524d;
+margin-top: 0mm;
+}
+
+.flex-box>div {
+background-color: none;
+width: 700px;
+height: 40px;
+text-align: center;
+font-size: 13px;
+color: white;
+margin-top: 12px;
+}
+/*end of flex box*/
+
+/*extras*/
+#die {
+margin-left: -10mm;
+margin-top: 12px;
+}
+
+.pictures {
+margin-top: 13px;
+margin-left: -100px;
+}
+
+#f {
+margin-left: 165mm;
+margin-top: 25px;
+}
+
+h4 {
+font-size: 15px;
+}
+
+h5 {
+font-size: 13px;
+}
+
+/*end of extras*/
+/*end of stylesheet*/
